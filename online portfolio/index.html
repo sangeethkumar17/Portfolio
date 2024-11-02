@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangeethkumar's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body class="bg-black text-white">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default w-full z-50 rounded-lg mx-4 mt-4 shadow-lg">
+    <div class="nametitle">
+        <div class="container mx-auto flex flex-col items-center" style="margin-bottom: 2rem;">
+            <h1 class="text-5xl font-bold text-purple-500">SANGEETHKUMAR.M</h1>
+            <p class="mt-5 text-center font-bold" style="font-size: 14px; opacity:0.5;">SOFTWARE ENGINEER</p>
+
+            <!-- Button to Open Side Navigation -->
+            <div class="flex justify-end absolute top-5 right-5">
+                <button id="openSidenav" class="bg-transparent text-purple-500 p-0 rounded hover:text-purple-600 transition text-2xl">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+
+    <!-- Collapsible Sidebar -->
+    <div class="sidenav" id="sidenav">
+        <button id="closeSidenav" class="closebtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </button>
+        
+        
+        <ul class="flex flex-col items-start p-4">
+            <li class="py-2"><a href="#about" class="text-white">About</a></li>
+            <li class="py-2"><a href="#skills" class="text-white">Skills</a></li>
+            <li class="py-2"><a href="#projects" class="text-white">Projects</a></li>
+            <li class="py-2"><a href="#experience" class="text-white">Experience</a></li>
+            <li class="py-2"><a href="#education" class="text-white">Education</a></li>
+            <li class="py-2"><a href="#achievements" class="text-white">Achievements</a></li>
+            <li class="py-2"><a href="#contact" class="text-white">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+
+    <!-- Home Section with Profile Photo -->
+    <section id="about" class="flex items-center justify-center">
+        <div class="flex items-center max-w-5xl mx-auto">
+            <!-- Profile Photo -->
+            <div class="custom-profile">
+                <img src="profile.jpeg" alt="Profile Photo" class="w-full h-full object-cover rounded-lg shadow-lg">
+            </div>
+
+            <!-- About Me Section -->
+            <div class="ml-6">
+                <p class="mt-4 text-2xl md:text-3xl text-left">Aspiring Software Engineer | Front-end Developer</p>
+                <h2 class="text-4xl font-bold text-purple-300 mt-8">About Me</h2>
+                <p class="mt-4 text-xl text-gray-300">Highly motivated and skilled software engineer with experience in front-end development using Angular and TypeScript. Proven track record in building interactive web applications, including an 8-month tenure developing a Smart Hostel Management System at SBNA Software Solutions. Passionate about 3D modeling, VR development, and exploring cutting-edge technology. Strong problem-solving skills and a commitment to delivering high-quality, user-focused solutions. Currently pursuing an MCA with expected graduation in 2025.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills" class="bg-gray-900 py-16">
+    <div class="container mx-auto px-6 md:px-20">
+        <h2 class="text-4xl font-bold text-center text-purple-300 mb-8">Skills</h2>
+        <div class="skills-grid grid gap-6 grid-cols-1 md:grid-cols-4 md:gap-8">
+            <!-- Skill Item with Progress Bar -->
+            <div class="skill-item">
+                <p class="text-white font-semibold mb-2">HTML</p>
+                <div class="progress-bar bg-gray-700">
+                    <div class="fill-bar intermediate" style="width: 65%;">Intermediate</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p class="text-white font-semibold mb-2">CSS</p>
+                <div class="progress-bar bg-gray-700">
+                    <div class="fill-bar intermediate" style="width: 65%;">Intermediate</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p class="text-white font-semibold mb-2">JavaScript</p>
+                <div class="progress-bar bg-gray-700">
+                    <div class="fill-bar intermediate" style="width: 65%;">Intermediate</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p class="text-white font-semibold mb-2">Angular</p>
+                <div class="progress-bar bg-gray-700">
+                    <div class="fill-bar beginner" style="width: 50%;">Beginner</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p class="text-white font-semibold mb-2">TypeScript</p>
+                <div class="progress-bar bg-gray-700">
+                    <div class="fill-bar beginner" style="width: 50%;">Beginner</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p class="text-white font-semibold mb-2">Unity</p>
+                <div class="progress-bar bg-gray-700">
+                    <div class="fill-bar intermediate" style="width: 65%;">Intermediate</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <p class="text-white font-semibold mb-2">Blender</p>
+                <div class="progress-bar bg-gray-700">
+                    <div class="fill-bar expert" style="width: 90%;">Expert</div>
+                </div>
+            </div>
+
+            <!-- Add more skill items as needed -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="container mx-auto py-16 px-6 md:px-20">
+        <h2 class="text-4xl font-bold text-center text-purple-300 mb-8">Work Experience</h2>
+        <div class="flex flex-col space-y-6">
+            <div class="experience-item bg-gray-800 shadow-lg rounded-lg p-6 hover:bg-gray-700 transition">
+                <h3 class="text-xl font-semibold text-purple-300">SBNA Software Solutions Private Limited</h3>
+                <p class="text-gray-400">Front-end Developer (8 months)</p>
+                <ul class="list-disc ml-6 mt-2 text-gray-300">
+                    <li>Developed a Smart Hostel Management System as part of a 4-member team using Angular.</li>
+                    <li>Collaborated on front-end features, focusing on responsive design and user experience.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto py-16 px-6 md:px-20">
+        <h2 class="text-4xl font-bold text-center text-purple-300 mb-8">Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+                class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105">
+                <img class="w-full h-48 object-cover" src="hostel.png" alt="Smart Hostel Management System">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-purple-300">Smart Hostel Management System</h3>
+                    <p class="mt-2 text-gray-400">Developed a management system as part of a 4-member team using
+                        Angular The Smart Hostel Management System is an innovative application designed to streamline hostel operations, enhancing the overall experience for both residents and management. By integrating features such as real-time occupancy tracking, maintenance requests, and communication channels, this system significantly improves efficiency and fosters a vibrant community within the hostel environment.</p>
+                </div>
+            </div>
+            <div
+                class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105">
+                <img class="w-full h-48 object-cover" src="VR shopping.png" alt="VR Shopping Project" style="scale: 2;">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-purple-300">VR Shopping Project</h3>
+                    <p class="mt-2 text-gray-400">The VR Shopping project is an immersive virtual reality application that allows users to explore and shop in a fully interactive 3D environment, simulating a realistic retail experience. It leverages cutting-edge technology to enhance user engagement and streamline the online shopping process, providing a unique and enjoyable alternative to traditional e-commerce platforms.</p>
+                </div>
+            </div>
+            <div
+                class="project-card bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105">
+                <img class="w-full h-48 object-cover" src="accreditation_standards.png" alt="Other Project">
+                <div class="p-4">
+                    <h3 class="text-xl font-semibold text-purple-300">IQAS</h3>
+                    <p class="mt-2 text-gray-400">
+                        The IQAS Dashboard project is a comprehensive web application designed to streamline the management and visualization of student academic performance data, integrating real-time analytics and user-friendly interfaces. It enhances decision-making for educators and administrators by providing intuitive dashboards that highlight key metrics and trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto py-16 px-6 md:px-20">
+        <h2 class="text-4xl font-bold text-center text-purple-300 mb-8">Education</h2>
+        <div class="flex flex-col space-y-6">
+            <div class="education-item bg-gray-800 shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-purple-300">MCA, Kumaraguru College of Technology</h3>
+                <p class="text-gray-400">Expected Graduation: 2025</p>
+            </div>
+            <div class="education-item bg-gray-800 shadow-lg rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-purple-300">B.Sc in Information Technology</h3>
+                <p class="text-gray-400">Dr. N.G.P. Arts and Science College (2019 - 2022)</p>
+                <p class="text-gray-400">GPA: 6.5</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Achievements Section -->
+<section id="achievements" class="bg-gray-800 py-16">
+    <div class="container mx-auto px-6 md:px-20">
+        <h2 class="text-4xl font-bold text-center text-purple-300 mb-8">Achievements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl text-purple-500 mr-3">&#128202;</span> <!-- Icon for achievement -->
+                    <h3 class="text-xl font-semibold text-white">Web Spark Hackathon</h3>
+                </div>
+                <p class="text-gray-300">
+                    2nd Place in Web Spark Hackathon for a project in the education domain.
+                </p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center mb-4">
+                    <span class="text-3xl text-purple-500 mr-3">&#128214;</span> <!-- Icon for documentation -->
+                    <h3 class="text-xl font-semibold text-white">Documentation Coordinator</h3>
+                </div>
+                <p class="text-gray-300">
+                    Actively involved in the Department Association as a Documentation Coordinator, responsible for maintaining essential records and documentation for various departmental activities and events.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="bg-gray-800 py-16">
+    <div class="container mx-auto px-6 md:px-20">
+        <h2 class="text-4xl font-bold text-center text-purple-300 mb-8">Contact Me</h2>
+        <div class="flex flex-col items-center">
+            <div class="bg-gray-900 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full md:w-2/3">
+                <p class="text-gray-400 text-center mb-4">Feel free to reach out to me through the following channels:</p>
+                <div class="flex justif-center space-x-8">
+                    <p class="text-gray-400">
+                        <span class="font-semibold text-white">Email:</span>
+                        <a href="mailto:sangeethkumar11182@gmail.com" class="text-purple-500 hover:underline">sangeethkumar11182@gmail.com</a>
+                    </p>
+                    <p class="text-gray-400">
+                        <span class="font-semibold text-white">LinkedIn:</span>
+                        <a href="https://www.linkedin.com/in/sangeethkumar-m-link" class="text-purple-500 hover:underline">sangeethkumar-m-link</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="bg-gray-900 py-4 text-center">
+        <p class="text-gray-500">&copy; 2024 Sangeethkumar. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const openSidenav = document.getElementById("openSidenav");
+        const sidenav = document.getElementById("sidenav");
+        const closeSidenav = document.getElementById("closeSidenav");
+
+        openSidenav.addEventListener("click", () => {
+            sidenav.style.right = "0"; // Show sidenav by sliding in from the right
+        });
+
+        closeSidenav.addEventListener("click", () => {
+            sidenav.style.right = "-250px"; // Hide sidenav by sliding out to the right
+        });
+    </script>
+
+
+
+</body>
+
+</html>

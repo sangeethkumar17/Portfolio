@@ -1,0 +1,288 @@
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 2s ease-in;
+}
+
+/* Centering and spacing adjustments for navbar */
+nav ul {
+    margin-top: 1rem; /* Adjust margin as needed */
+}
+
+/* Custom styles for navbar items */
+nav ul li {
+    border-radius: 0; /* Sharp corners */
+}
+
+nav ul li a {
+    color: black; /* Black text */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s; /* Smooth transition for text color */
+}
+
+/* Hover styles */
+nav ul li:hover {
+    background-color: white; /* White background on hover */
+    font-weight: bold; /* Make text bold */
+    border-color: white; /* White border on hover */
+}
+
+nav ul li:hover a {
+    color: black; /* Highlight text color to black on hover */
+    
+}
+
+/* Additional styles if needed */
+#home {
+    display: flex;
+    flex-direction: row; /* Ensure the layout is side by side */
+    align-items: center; /* Center items vertically */
+}
+
+
+    .custom-profile {
+        width: 2022px;
+        height: 400px;
+        margin-bottom: 1.5rem;
+        border-radius: 20px; /* Adjust the radius as needed */
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        overflow: hidden; /* Ensure corners are rounded */
+    }
+
+/* style.css */
+
+/* Fixed navbar styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 20%;
+    transition: box-shadow 0.3s ease;
+    z-index: 10;
+}
+
+.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#about {
+    padding-top: 11rem; /* Adjust based on the actual navbar height */
+    margin-top: 0rem;
+    background-color: #808080;
+    color:  #050505;
+}
+
+/* style.css */
+
+/* Initial solid blue navbar */
+.navbar {
+    background-color: rgb(36, 36, 65);
+    transition: background-color 0.5s ease;
+}
+
+.navbar-glass {
+    backdrop-filter: blur(10px);
+    background-color: rgba(36, 36, 65, 0.3);
+}
+
+
+
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 2s ease-in;
+}
+
+/* Fixed navbar styling */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Full width for navbar */
+    transition: box-shadow 0.3s ease;
+    z-index: 50; /* Make sure it's below sidenav */
+}
+
+.scrolled {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidenav styles */
+.sidenav {
+    height: 100%;
+    width: 250px; /* Width of the sidenav */
+    position: fixed;
+    z-index: 60; /* Ensure it's above the navbar */
+    top: 0;
+    right: -250px; /* Start hidden off-screen on the right */
+    background-color: #525255; /* Background color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: right 0.5s ease; /* Transition effect for opening/closing */
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #7e7c7c; /* Change color on hover */
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Adjusted for visibility */
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+/* Navbar adjustments */
+.navbar {
+    position: fixed; /* Fix navbar to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50; /* Keep above other elements */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Optional blur effect */
+}
+
+/* Position the hamburger icon in the top-right */
+#openSidenav {
+    position: absolute;
+    top: 20px; /* Adjust top position as necessary */
+    right: 20px; /* Adjust right position as necessary */
+    font-size: 2rem; /* Size of the icon */
+}
+
+/* Optional hover effect */
+#openSidenav:hover {
+    color: #9f7aea; /* Light purple on hover */
+}
+
+/* Close button styling */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    left: -30px; /* Adjust positioning */
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.closebtn:hover {
+    transform: rotate(90deg) scale(1.2); /* Rotate and scale on hover */
+}
+
+.closebtn svg path {
+    transition: stroke 0.3s ease;
+}
+
+.closebtn:hover svg path {
+    stroke: #0c1744; /* Change color on hover */
+}
+
+.navbar {
+    max-width: 95%; /* Adds a gap from the sides */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background with transparency */
+    border-radius: 12px; /* Rounds the corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+    margin-left: 34px;
+    padding-top: 18px;
+}
+
+/* Grid container for skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 6px; /* Adjust gap as needed */
+}
+
+@media (min-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4x4 grid for medium screens and up */
+        gap: 16px;
+    }
+}
+
+/* Container for each skill item */
+.skill-item {
+    width: 100%;
+}
+
+/* Progress bar background */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* Fill bar styles */
+.fill-bar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* Different colors based on skill level */
+.fill-bar.beginner {
+    background-color: #60A5FA; /* Light blue for beginner */
+}
+
+.fill-bar.intermediate {
+    background-color: #FBBF24; /* Yellow for intermediate */
+}
+
+.fill-bar.expert {
+    background-color: #10B981; /* Green for expert */
+}
+
+/* Shadow effect for the navbar */
+.shadow-lg {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+}
+
+/* Optional: Add a glow effect to the navbar background */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background */
+    /* Optional glow effect for the navbar */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); /* Glow effect for the navbar */
+}
